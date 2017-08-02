@@ -25,7 +25,7 @@ namespace Webhook.Helpers
         {
             var appSettings = System.Configuration.ConfigurationManager.AppSettings;
             string username = appSettings["docusignDeveloperEmail"] ?? "adnan_sultan@trimble.com";
-            string password = appSettings["docusignPassword"] ?? "toyotasupra2";
+            string password = appSettings["docusignPassword"] ?? "nopassword";
             string integratorKey = appSettings["docusignIntegratorKey"] ?? "bce6e977-f3da-443c-a463-923080c38c4d";
 
             string authHeader = "{\"Username\":\"" + username + "\", \"Password\":\"" + password + "\", \"IntegratorKey\":\"" + integratorKey + "\"}";
